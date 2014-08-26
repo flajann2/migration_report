@@ -2,6 +2,11 @@
 
 require 'rubygems'
 require 'bundler'
+
+def s_version
+  SemVer.find.format "%M.%m.%p%s"
+end
+
 begin
   Bundler.setup(:default, :development)
 rescue Bundler::BundlerError => e
@@ -15,12 +20,14 @@ require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://guides.rubygems.org/specification-reference/ for more options
   gem.name = "migration_report"
-  gem.homepage = "http://github.com/flajann2/migration_report"
+  gem.homepage = "https://github.com/flajann2/migration_report"
   gem.license = "MIT"
   gem.summary = %Q{TODO: one-line summary of your gem}
   gem.description = %Q{TODO: longer description of your gem}
   gem.email = "lordalveric@yahoo.com"
   gem.authors = ["Fred Mitchell"]
+  gem.version = s_version
+  gem.required_ruby_version = '>= 2.0'
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
