@@ -3,6 +3,6 @@ namespace :migration_report do
   task  do
     # Task goes here
   end
-  
+
 end
 

@@ -2,6 +2,7 @@
 
 require 'rubygems'
 require 'bundler'
+require 'semver'
 
 def s_version
   SemVer.find.format "%M.%m.%p%s"
@@ -22,8 +23,9 @@ Jeweler::Tasks.new do |gem|
   gem.name = "migration_report"
   gem.homepage = "https://github.com/flajann2/migration_report"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Generate Report of your Migration History}
+  gem.description = %Q{Migration Report looks at the contents of your db/migration file and generates a
+                      detailed history of the modifications.}
   gem.email = "lordalveric@yahoo.com"
   gem.authors = ["Fred Mitchell"]
   gem.version = s_version
