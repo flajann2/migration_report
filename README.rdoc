@@ -1,6 +1,30 @@
 = migration_report
 
-Description goes here.
+Migration Report generates a comprehensive report on the history of migrations in your
+Rails application that have accumulated thus far, specifying the tables modified, the operations
+performed, etc., based on the contents of the db/migrate directory.
+
+== Installation
+
+In your Gemfile add this line:
+
+ $ gem 'migration_report'
+
+and then execute:
+
+ $ bundle
+
+or install it directly with:
+
+ $ gem install migration_report
+
+== Usage
+
+This installs itself as a rake task, which you may run as:
+
+ rake migration_report:csv
+
+which will output the report in .csv format to STDOUT.
 
 == Contributing to migration_report
  
@@ -16,4 +40,3 @@ Description goes here.
 
 Copyright (c) 2014 Fred Mitchell. See LICENSE.txt for
 further details.
-
