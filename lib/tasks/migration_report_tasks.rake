@@ -1,6 +1,6 @@
 namespace :migration_report do
-  desc :csv "Generate Report on Migration History in CSV format"
-  task  do
+  desc "Generate Report on Migration History in CSV format"
+  task :csv do
     # Task goes here
   end
 
