@@ -31,6 +31,7 @@ Gem::Specification.new do |s|
     "lib/migration_report.rb",
     "lib/railtie.rb",
     "lib/tasks/migration_report_tasks.rake",
+    "migration_report.gemspec",
     "spec/migration_report_spec.rb",
     "spec/spec_helper.rb"
   ]
